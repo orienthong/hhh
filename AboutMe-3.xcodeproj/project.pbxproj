@@ -12,6 +12,13 @@
 		C556E4761E7909E100025862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C556E4741E7909E100025862 /* Main.storyboard */; };
 		C556E4781E7909E100025862 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C556E4771E7909E100025862 /* Assets.xcassets */; };
 		C556E47B1E7909E100025862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C556E4791E7909E100025862 /* LaunchScreen.storyboard */; };
+		C556E4881E790A2800025862 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C556E4821E790A2800025862 /* PageViewController.swift */; };
+		C556E4891E790A2900025862 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C556E4831E790A2800025862 /* FirstViewController.swift */; };
+		C556E48A1E790A2900025862 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C556E4841E790A2800025862 /* SecondViewController.swift */; };
+		C556E48B1E790A2900025862 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C556E4851E790A2800025862 /* ThirdViewController.swift */; };
+		C556E48C1E790A2900025862 /* customCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C556E4861E790A2800025862 /* customCollectionViewCell.swift */; };
+		C556E48F1E790A3500025862 /* road.png in Resources */ = {isa = PBXBuildFile; fileRef = C556E48E1E790A3500025862 /* road.png */; };
+		C5F0F67E1E7914F700D8A09B /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0F67D1E7914F700D8A09B /* CGPoint+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		C556E4771E7909E100025862 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C556E47A1E7909E100025862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C556E47C1E7909E100025862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C556E4821E790A2800025862 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		C556E4831E790A2800025862 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		C556E4841E790A2800025862 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		C556E4851E790A2800025862 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		C556E4861E790A2800025862 /* customCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customCollectionViewCell.swift; sourceTree = "<group>"; };
+		C556E48E1E790A3500025862 /* road.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = road.png; sourceTree = "<group>"; };
+		C5F0F67D1E7914F700D8A09B /* CGPoint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +68,19 @@
 		C556E46F1E7909E100025862 /* AboutMe-3 */ = {
 			isa = PBXGroup;
 			children = (
+				C556E48E1E790A3500025862 /* road.png */,
 				C556E4701E7909E100025862 /* AppDelegate.swift */,
 				C556E4721E7909E100025862 /* ViewController.swift */,
 				C556E4741E7909E100025862 /* Main.storyboard */,
 				C556E4771E7909E100025862 /* Assets.xcassets */,
 				C556E4791E7909E100025862 /* LaunchScreen.storyboard */,
 				C556E47C1E7909E100025862 /* Info.plist */,
+				C556E4821E790A2800025862 /* PageViewController.swift */,
+				C556E4831E790A2800025862 /* FirstViewController.swift */,
+				C556E4841E790A2800025862 /* SecondViewController.swift */,
+				C556E4851E790A2800025862 /* ThirdViewController.swift */,
+				C556E4861E790A2800025862 /* customCollectionViewCell.swift */,
+				C5F0F67D1E7914F700D8A09B /* CGPoint+Extension.swift */,
 			);
 			path = "AboutMe-3";
 			sourceTree = "<group>";
@@ -125,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C556E47B1E7909E100025862 /* LaunchScreen.storyboard in Resources */,
+				C556E48F1E790A3500025862 /* road.png in Resources */,
 				C556E4781E7909E100025862 /* Assets.xcassets in Resources */,
 				C556E4761E7909E100025862 /* Main.storyboard in Resources */,
 			);
@@ -137,8 +159,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C556E4881E790A2800025862 /* PageViewController.swift in Sources */,
 				C556E4731E7909E100025862 /* ViewController.swift in Sources */,
 				C556E4711E7909E100025862 /* AppDelegate.swift in Sources */,
+				C556E48C1E790A2900025862 /* customCollectionViewCell.swift in Sources */,
+				C556E48A1E790A2900025862 /* SecondViewController.swift in Sources */,
+				C556E48B1E790A2900025862 /* ThirdViewController.swift in Sources */,
+				C556E4891E790A2900025862 /* FirstViewController.swift in Sources */,
+				C5F0F67E1E7914F700D8A09B /* CGPoint+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +330,7 @@
 				C556E4811E7909E100025862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
