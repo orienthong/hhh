@@ -51,7 +51,7 @@ class ThirdViewController: MasterViewController {
     }
     private func setUpScene() {
         placeItems(with: "Java", atPoint: CGPoint(x: -5, y: 2), timeOffset: 0)
-        placeItems(with: "Android", atPoint: CGPoint(x: 0, y: 0), timeOffset: 0.05)
+        placeItems(with: "Android", atPoint: CGPoint(x: -4.3, y: 6), timeOffset: 0.05)
         placeItems(with: "Object", atPoint: CGPoint(x: -6, y: 5), timeOffset: 0.1)
         placeItems(with: "Class", atPoint: CGPoint(x: -2, y: 4), timeOffset: 0.15)
         placeItems(with: "MVC", atPoint: CGPoint(x: -3, y: 1), timeOffset: 0.2)
@@ -82,8 +82,8 @@ class ThirdViewController: MasterViewController {
         textNode.addAnimation(positionAnimation, forKey: nil)
         
         let opacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
-        opacityAnimation.keyTimes = [0.0, 0.2, 0.9, 1.0]
-        opacityAnimation.values = [0.0, 1.0, 1.0, 0.0]
+        opacityAnimation.keyTimes = [0.0, 0.2, 0.6, 0.8, 1.0]
+        opacityAnimation.values = [0.0, 1.0, 0.8, 0.0, 0.0]
         opacityAnimation.duration = positionAnimation.duration
         opacityAnimation.timeOffset = positionAnimation.timeOffset
         opacityAnimation.repeatCount = FLT_MAX

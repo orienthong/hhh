@@ -11,10 +11,11 @@ import UIKit
 class CustomSlideView: UIView {
     
     var slideButton: UIButton!
-    
+    var slideButtonDown: UIButton!
     
     override init(frame: CGRect) {
         slideButton = UIButton(type: .custom)
+        slideButtonDown = UIButton(type: .custom)
         super.init(frame: frame)
         
         self.addSubview(slideButton)
@@ -23,6 +24,13 @@ class CustomSlideView: UIView {
         slideButton.translatesAutoresizingMaskIntoConstraints = false
         slideButton.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         slideButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
+        
+        self.addSubview(slideButtonDown)
+        slideButtonDown.setTitle("", for: .normal)
+        slideButtonDown.setImage(UIImage(named: "slideButtonDown.png"), for: .normal)
+        slideButtonDown.translatesAutoresizingMaskIntoConstraints = false
+        slideButtonDown.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        slideButtonDown.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10).isActive = true
     }
     
     required init?(coder aDecoder: NSCoder) {

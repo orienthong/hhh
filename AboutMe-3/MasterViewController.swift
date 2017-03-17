@@ -42,6 +42,7 @@ class MasterViewController: UIViewController {
         visualViewAnimator = UIViewPropertyAnimator(duration: 0.8, curve: .easeOut, animations: {
             self.visualEffectView?.effect = self.effect
             self.slideView.slideButton.alpha = 0.0
+            self.slideView.slideButtonDown.alpha = 1.0
         })
         setUpTopView()
     }
@@ -68,11 +69,13 @@ class MasterViewController: UIViewController {
                 visualViewAnimator = UIViewPropertyAnimator(duration: 0.8, curve: .easeOut, animations: {
                     self.visualEffectView?.effect = self.effect
                     self.slideView.slideButton.alpha = 0.0
+                    self.slideView.slideButtonDown.alpha = 1.0
                 })
             case .pop:
                 visualViewAnimator = UIViewPropertyAnimator(duration: 0.8, curve: .easeOut, animations: {
                     self.visualEffectView?.effect = nil
                     self.slideView.slideButton.alpha = 1.0
+                    self.slideView.slideButtonDown.alpha = 0.0
                 })
             }
         case .changed:
@@ -159,9 +162,11 @@ class MasterViewController: UIViewController {
                 case .push:
                     self.visualEffectView.effect = nil
                     self.slideView.slideButton.alpha = 1.0
+                    self.slideView.slideButtonDown.alpha = 0.0
                 case .pop:
                     self.visualEffectView.effect = self.effect
                     self.slideView.slideButton.alpha = 0.0
+                    self.slideView.slideButtonDown.alpha = 1.0
                 }
             default:
                 break

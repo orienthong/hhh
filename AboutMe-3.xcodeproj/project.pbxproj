@@ -22,7 +22,7 @@
 		C5B1FCAF1E7AC22700C637AA /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B1FCAE1E7AC22700C637AA /* MasterViewController.swift */; };
 		C5B60D8B1E7C229000A4B35F /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B60D8A1E7C229000A4B35F /* TopView.swift */; };
 		C5B60D8D1E7C3A7400A4B35F /* slideButtonUp.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B60D8C1E7C3A7400A4B35F /* slideButtonUp.png */; };
-		C5B60D8F1E7C3B7B00A4B35F /* slideButtonDown.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B60D8E1E7C3B7B00A4B35F /* slideButtonDown.png */; };
+		C5B60D911E7C426B00A4B35F /* slideButtonDown.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B60D901E7C426B00A4B35F /* slideButtonDown.png */; };
 		C5B7C24B1E7AA4DC00824B19 /* CustomSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7C24A1E7AA4DC00824B19 /* CustomSlideView.swift */; };
 		C5F0F67E1E7914F700D8A09B /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0F67D1E7914F700D8A09B /* CGPoint+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +45,7 @@
 		C5B1FCAE1E7AC22700C637AA /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		C5B60D8A1E7C229000A4B35F /* TopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		C5B60D8C1E7C3A7400A4B35F /* slideButtonUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slideButtonUp.png; path = Assets.xcassets/SlideButton.imageset/slideButtonUp.png; sourceTree = "<group>"; };
-		C5B60D8E1E7C3B7B00A4B35F /* slideButtonDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slideButtonDown.png; sourceTree = "<group>"; };
+		C5B60D901E7C426B00A4B35F /* slideButtonDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slideButtonDown.png; sourceTree = "<group>"; };
 		C5B7C24A1E7AA4DC00824B19 /* CustomSlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSlideView.swift; sourceTree = "<group>"; };
 		C5F0F67D1E7914F700D8A09B /* CGPoint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,7 +97,7 @@
 				C556E4791E7909E100025862 /* LaunchScreen.storyboard */,
 				C556E47C1E7909E100025862 /* Info.plist */,
 				C5B60D8C1E7C3A7400A4B35F /* slideButtonUp.png */,
-				C5B60D8E1E7C3B7B00A4B35F /* slideButtonDown.png */,
+				C5B60D901E7C426B00A4B35F /* slideButtonDown.png */,
 				C556E4821E790A2800025862 /* PageViewController.swift */,
 				C556E4831E790A2800025862 /* FirstViewController.swift */,
 				C556E4841E790A2800025862 /* SecondViewController.swift */,
@@ -179,12 +179,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B60D8F1E7C3B7B00A4B35F /* slideButtonDown.png in Resources */,
 				C556E47B1E7909E100025862 /* LaunchScreen.storyboard in Resources */,
 				C5B60D8D1E7C3A7400A4B35F /* slideButtonUp.png in Resources */,
 				C556E48F1E790A3500025862 /* road.png in Resources */,
 				C556E4781E7909E100025862 /* Assets.xcassets in Resources */,
 				C556E4761E7909E100025862 /* Main.storyboard in Resources */,
+				C5B60D911E7C426B00A4B35F /* slideButtonDown.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
