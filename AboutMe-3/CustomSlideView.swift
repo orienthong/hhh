@@ -19,7 +19,7 @@ class CustomSlideView: UIView {
         
         self.addSubview(slideButton)
         slideButton.setTitle("", for: .normal)
-        slideButton.setBackgroundImage(#imageLiteral(resourceName: "SlideButton"), for: .normal)
+        slideButton.setBackgroundImage(UIImage(named: "slideButtonUp.png"), for: .normal)
         slideButton.translatesAutoresizingMaskIntoConstraints = false
         slideButton.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         slideButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true

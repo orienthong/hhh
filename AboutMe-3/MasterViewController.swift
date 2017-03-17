@@ -18,13 +18,14 @@ class MasterViewController: UIViewController {
     private var visualViewAnimator: UIViewPropertyAnimator!
     private var effect: UIVisualEffect!
     var visualEffectView: UIVisualEffectView!
-    var topView: UIView!
 
     
     private var panRecognizer: UIPanGestureRecognizer!
     private var operation: SlideViewOperation = .push
     
     private var slideViewStartDragPosition: CGPoint!
+    
+    var topView: TopView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,17 +34,20 @@ class MasterViewController: UIViewController {
         visualEffectView.frame = view.bounds
         visualEffectView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
         view.addSubview(visualEffectView!)
-        
         addSlideView()
         panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panSlideView(_:)))
         slideView.addGestureRecognizer(panRecognizer)
         
         effect = UIBlurEffect(style: .extraLight)
         visualViewAnimator = UIViewPropertyAnimator(duration: 0.8, curve: .easeOut, animations: {
-                    self.visualEffectView?.effect = self.effect
-                })
+            self.visualEffectView?.effect = self.effect
+            self.slideView.slideButton.alpha = 0.0
+        })
         setUpTopView()
-        
+    }
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        layoutTopView()
     }
     private func progress() -> CGFloat {
         switch operation {
@@ -63,10 +67,12 @@ class MasterViewController: UIViewController {
             case .push:
                 visualViewAnimator = UIViewPropertyAnimator(duration: 0.8, curve: .easeOut, animations: {
                     self.visualEffectView?.effect = self.effect
+                    self.slideView.slideButton.alpha = 0.0
                 })
             case .pop:
                 visualViewAnimator = UIViewPropertyAnimator(duration: 0.8, curve: .easeOut, animations: {
                     self.visualEffectView?.effect = nil
+                    self.slideView.slideButton.alpha = 1.0
                 })
             }
         case .changed:
@@ -152,8 +158,10 @@ class MasterViewController: UIViewController {
                 switch self.operation {
                 case .push:
                     self.visualEffectView.effect = nil
+                    self.slideView.slideButton.alpha = 1.0
                 case .pop:
                     self.visualEffectView.effect = self.effect
+                    self.slideView.slideButton.alpha = 0.0
                 }
             default:
                 break
@@ -186,37 +194,21 @@ class MasterViewController: UIViewController {
         slideView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: view.frame.height / 4).isActive = true
         slideView.isUserInteractionEnabled = true
     }
-    
-    func setUpTopView() {
-        topView = UIView()
-        topView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        view.insertSubview(topView, belowSubview: visualEffectView!)
-        layoutTopView(with: traitCollection.verticalSizeClass)
+    private func layoutSlideView() {
+        
     }
-    func layoutTopView(with trait: UIUserInterfaceSizeClass) {
+    private func setUpTopView() {
+        topView = TopView()
+        view.insertSubview(topView, belowSubview: visualEffectView!)
+    }
+    private func layoutTopView() {
         topView.translatesAutoresizingMaskIntoConstraints = false
         topView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         topView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         topView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        switch trait {
-        case .compact: //hc
-            topView.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        case .unspecified:
-            fallthrough
-        case .regular: //hr
-            topView.heightAnchor.constraint(equalToConstant: 100).isActive = true
-        }
+        topView.heightAnchor.constraint(equalToConstant: 100).isActive = true
     }
-    
-    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.willTransition(to: newCollection, with: coordinator)
-        topView.removeConstraints(topView.constraints)
-        layoutTopView(with: newCollection.verticalSizeClass)
-        
-        
-    }
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

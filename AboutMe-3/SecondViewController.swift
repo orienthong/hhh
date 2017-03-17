@@ -20,6 +20,7 @@ class SecondViewController: MasterViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        topView.backgroundColor = #colorLiteral(red: 0.1529880464, green: 0.1675317287, blue: 0.2100167572, alpha: 1)
         view.backgroundColor = #colorLiteral(red: 0.1529880464, green: 0.1675317287, blue: 0.2100167572, alpha: 1)
         setUpView()
     }
@@ -38,7 +39,8 @@ class SecondViewController: MasterViewController {
         
         //rectangleView
         rectangleView = UIImageView()
-        rectangleView.image = #imageLiteral(resourceName: "Rectangle")
+        rectangleView.image = UIImage(named: "Rectangle.png")
+        rectangleView.layer.masksToBounds = true
         view.insertSubview(rectangleView, belowSubview: visualEffectView)
         
         //stickerLabel
@@ -67,8 +69,8 @@ class SecondViewController: MasterViewController {
         stickerLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
 
     }
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
         layoutViews()
     }
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -84,7 +86,7 @@ class SecondViewController: MasterViewController {
         let text = "#include\"stdio.h\"\nint main( )\n{\n    printf(\"Hello, World.\\n\");\n}"
         textView.text = ""
         configureAnimation()
-        textView.animate(newText: text, characterDelay: 0.02)
+        textView.animate(newText: text, characterDelay: 0.01)
         animator.startAnimation()
         stickerAnimator.startAnimation()
         

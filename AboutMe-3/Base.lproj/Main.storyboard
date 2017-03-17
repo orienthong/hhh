@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="V8e-qD-bBh">
-    <device id="retina5_5" orientation="landscape">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j56-gK-4e0">
-                                <rect key="frame" x="0.0" y="0.0" width="736" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="ADm-ir-Z3M">
@@ -32,52 +30,32 @@
                                     </constraint>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tc6-KA-AUZ">
-                                <rect key="frame" x="51" y="60" width="634" height="190"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="190" id="Y87-GC-c5H"/>
-                                </constraints>
-                                <string key="text">#include”stdio.h”
-int main()
-{ 
-	printf(“Hello, World.\n”);
-}</string>
-                                <color key="textColor" red="0.97665303945541382" green="0.99841588735580444" blue="0.99909371137619019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="a8R-a1-FsD">
-                                <rect key="frame" x="175.66666666666663" y="250" width="385" height="164"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="a8R-a1-FsD" secondAttribute="height" multiplier="333:142" id="Mg6-8r-Hj7"/>
-                                    <constraint firstAttribute="height" constant="164" id="Z26-yK-8ut"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkS-J3-gjc">
-                                <rect key="frame" x="553" y="117" width="163" height="180"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
-                                <nil key="textColor"/>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Vx-Ox-V9k">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </sceneKitView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOd-qv-hit">
+                                <rect key="frame" x="229" y="457" width="127" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.5607843137254902" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FkS-J3-gjc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4rT-2R-Svk"/>
-                            <constraint firstItem="a8R-a1-FsD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="79M-hu-pdv"/>
-                            <constraint firstItem="tc6-KA-AUZ" firstAttribute="top" secondItem="j56-gK-4e0" secondAttribute="bottom" constant="10" id="BNT-gD-7du"/>
+                            <constraint firstItem="j56-gK-4e0" firstAttribute="bottom" secondItem="0Vx-Ox-V9k" secondAttribute="top" constant="80" id="Bb7-XE-tvE"/>
                             <constraint firstItem="j56-gK-4e0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IoV-cZ-18g"/>
-                            <constraint firstItem="tc6-KA-AUZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PrP-uK-83Z"/>
-                            <constraint firstItem="a8R-a1-FsD" firstAttribute="top" secondItem="tc6-KA-AUZ" secondAttribute="bottom" id="aBv-OU-mkr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0Vx-Ox-V9k" secondAttribute="bottom" id="VLc-IR-q0r"/>
                             <constraint firstItem="j56-gK-4e0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cna-34-KxT"/>
-                            <constraint firstItem="tc6-KA-AUZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="eTd-Ix-SX2"/>
-                            <constraint firstItem="FkS-J3-gjc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-20" id="f7d-8M-VBH"/>
+                            <constraint firstAttribute="trailing" secondItem="0Vx-Ox-V9k" secondAttribute="trailing" id="pwO-cy-BJP"/>
+                            <constraint firstItem="0Vx-Ox-V9k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wDp-aZ-bYJ"/>
                             <constraint firstAttribute="trailing" secondItem="j56-gK-4e0" secondAttribute="trailing" id="wVE-Py-PPg"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.23188405797103" y="138.58695652173915"/>
+            <point key="canvasLocation" x="215.94202898550725" y="204.61956521739131"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CZT-5E-pfA">
@@ -88,7 +66,7 @@ int main()
                         <viewControllerLayoutGuide type="bottom" id="B0p-kj-TQs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="O3x-1g-LSM">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -106,7 +84,7 @@ int main()
                         <viewControllerLayoutGuide type="bottom" id="V5x-ko-NP0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WIY-AO-h5v">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -116,7 +94,4 @@ int main()
             <point key="canvasLocation" x="-364" y="-375"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Rectangle" width="666" height="284"/>
-    </resources>
 </document>

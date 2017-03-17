@@ -16,6 +16,7 @@ class FirstViewController: MasterViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        topView.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
         view.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
         setUpImage()
         startAnimation()
@@ -24,7 +25,7 @@ class FirstViewController: MasterViewController {
     func setUpImage() {
         myDesign = UIImageView()
         view.insertSubview(myDesign, belowSubview: topView)
-        myDesign.image = #imageLiteral(resourceName: "Group 4")
+        myDesign.image = UIImage(named: "Group 4.png")
         myDesign.contentMode = .scaleAspectFit
         layoutImage(with: traitCollection.verticalSizeClass)
     }
@@ -42,11 +43,12 @@ class FirstViewController: MasterViewController {
             myDesign.contentMode = .scaleAspectFit
         }
     }
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+    }
+    
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
         super.willTransition(to: newCollection, with: coordinator)
-        let constraints = topView.constraints
-        topView.removeConstraints(constraints)
-        layoutTopView(with: newCollection.verticalSizeClass)
         
         myDesign.removeConstraints(myDesign.constraints)
         layoutImage(with: newCollection.verticalSizeClass)
