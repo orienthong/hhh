@@ -75,14 +75,14 @@ class ThirdViewController: MasterViewController {
         //Animation here
         let positionAnimation = CABasicAnimation(keyPath: "position.z")
         positionAnimation.fromValue = -10
-        positionAnimation.toValue = 10
+        positionAnimation.toValue = 5
         positionAnimation.duration = 5.0
         positionAnimation.timeOffset = positionAnimation.duration.multiplied(by: Double(offset))
         positionAnimation.repeatCount = FLT_MAX
         textNode.addAnimation(positionAnimation, forKey: nil)
         
         let opacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
-        opacityAnimation.keyTimes = [0.0, 0.2, 0.6, 0.8, 1.0]
+        opacityAnimation.keyTimes = [0.0, 0.2, 0.5, 0.7, 1.0]
         opacityAnimation.values = [0.0, 1.0, 0.8, 0.0, 0.0]
         opacityAnimation.duration = positionAnimation.duration
         opacityAnimation.timeOffset = positionAnimation.timeOffset
