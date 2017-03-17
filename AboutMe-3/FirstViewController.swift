@@ -13,7 +13,7 @@ class FirstViewController: MasterViewController {
     var myDesign: UIImageView!
     
     var animator: UIViewPropertyAnimator!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         topView.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
@@ -24,7 +24,7 @@ class FirstViewController: MasterViewController {
     
     func setUpImage() {
         myDesign = UIImageView()
-        view.insertSubview(myDesign, belowSubview: topView)
+        view.insertSubview(myDesign, belowSubview: visualEffectView)
         myDesign.image = UIImage(named: "Group 4.png")
         myDesign.contentMode = .scaleAspectFit
         layoutImage(with: traitCollection.verticalSizeClass)
@@ -53,7 +53,7 @@ class FirstViewController: MasterViewController {
         myDesign.removeConstraints(myDesign.constraints)
         layoutImage(with: newCollection.verticalSizeClass)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -75,5 +75,5 @@ class FirstViewController: MasterViewController {
             self.myDesign.center.y += 20
         })
     }
-
+    
 }

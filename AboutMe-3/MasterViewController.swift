@@ -18,7 +18,7 @@ class MasterViewController: UIViewController {
     private var visualViewAnimator: UIViewPropertyAnimator!
     private var effect: UIVisualEffect!
     var visualEffectView: UIVisualEffectView!
-
+    
     
     private var panRecognizer: UIPanGestureRecognizer!
     private var operation: SlideViewOperation = .push
@@ -45,10 +45,11 @@ class MasterViewController: UIViewController {
             self.slideView.slideButtonDown.alpha = 1.0
         })
         setUpTopView()
+        layoutTopView()
+        topView.isHidden = true
     }
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        layoutTopView()
     }
     private func progress() -> CGFloat {
         switch operation {
@@ -213,7 +214,7 @@ class MasterViewController: UIViewController {
         topView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         topView.heightAnchor.constraint(equalToConstant: 100).isActive = true
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

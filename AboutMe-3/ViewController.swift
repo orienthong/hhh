@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     func layoutPageControl() {
         view.addSubview(pageControl)
         pageControl.translatesAutoresizingMaskIntoConstraints = false
-        pageControl.numberOfPages = 3
+        pageControl.numberOfPages = 4
         pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
         pageControl.pageIndicatorTintColor = UIColor.white

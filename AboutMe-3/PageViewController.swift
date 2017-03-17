@@ -8,7 +8,7 @@
 
 import UIKit
 protocol PageViewControllerDelegate: class {
-
+    
     /**
      Called when the number of pages is updated.
      
@@ -16,7 +16,7 @@ protocol PageViewControllerDelegate: class {
      - parameter count: the total number of pages.
      */
     func PageViewControllerUpdatePageCount(PageViewController: PageViewController,
-                                    didUpdatePageCount count: Int)
+                                           didUpdatePageCount count: Int)
     
     /**
      Called when the current index is updated.
@@ -25,7 +25,7 @@ protocol PageViewControllerDelegate: class {
      - parameter index: the index of the currently visible page.
      */
     func PageViewControllerUpdatePageIndex(PageViewController: PageViewController,
-                                    didUpdatePageIndex index: Int)
+                                           didUpdatePageIndex index: Int)
     
 }
 
@@ -38,12 +38,12 @@ class PageViewController: UIPageViewController {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
-
+    
     
     public required init() {
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
     }
-
+    
     
     
     override func viewDidLoad() {
@@ -68,7 +68,7 @@ class PageViewController: UIPageViewController {
     private(set) lazy var orderedViewControllers: [UIViewController] = {
         return [FirstViewController(), SecondViewController(), ThirdViewController()]
     }()
-
+    
 }
 
 extension PageViewController: UIPageViewControllerDelegate {
@@ -89,7 +89,7 @@ extension PageViewController: UIPageViewControllerDelegate {
             pageDelegate?.PageViewControllerUpdatePageIndex(PageViewController: self, didUpdatePageIndex: pending)
         }
     }
-
+    
 }
 
 extension PageViewController: UIPageViewControllerDataSource {
