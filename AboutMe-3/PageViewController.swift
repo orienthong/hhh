@@ -38,10 +38,13 @@ class PageViewController: UIPageViewController {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
+
     
     public required init() {
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
     }
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,8 +55,11 @@ class PageViewController: UIPageViewController {
             setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
         pageDelegate?.PageViewControllerUpdatePageCount(PageViewController: self, didUpdatePageCount: orderedViewControllers.count)
+        
+        
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -113,4 +119,5 @@ extension PageViewController: UIPageViewControllerDataSource {
         return orderedViewControllers[nextControllerIndex]
     }
 }
+
 
