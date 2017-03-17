@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="V8e-qD-bBh">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina5_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,11 +20,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j56-gK-4e0">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="ADm-ir-Z3M">
@@ -33,7 +33,7 @@
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tc6-KA-AUZ">
-                                <rect key="frame" x="51" y="190" width="312" height="190"/>
+                                <rect key="frame" x="51" y="60" width="634" height="190"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="190" id="Y87-GC-c5H"/>
                                 </constraints>
@@ -47,14 +47,14 @@ int main()
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="a8R-a1-FsD">
-                                <rect key="frame" x="14.666666666666657" y="388" width="385" height="164"/>
+                                <rect key="frame" x="175.66666666666663" y="250" width="385" height="164"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="a8R-a1-FsD" secondAttribute="height" multiplier="333:142" id="Mg6-8r-Hj7"/>
                                     <constraint firstAttribute="height" constant="164" id="Z26-yK-8ut"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkS-J3-gjc">
-                                <rect key="frame" x="231" y="308" width="163" height="180"/>
+                                <rect key="frame" x="553" y="117" width="163" height="180"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="150"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -62,16 +62,12 @@ int main()
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FkS-J3-gjc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30" id="4rT-2R-Svk"/>
+                            <constraint firstItem="FkS-J3-gjc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4rT-2R-Svk"/>
                             <constraint firstItem="a8R-a1-FsD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="79M-hu-pdv"/>
-                            <constraint firstItem="tc6-KA-AUZ" firstAttribute="top" secondItem="j56-gK-4e0" secondAttribute="bottom" constant="90" id="BNT-gD-7du">
-                                <variation key="heightClass=compact" constant="10"/>
-                            </constraint>
+                            <constraint firstItem="tc6-KA-AUZ" firstAttribute="top" secondItem="j56-gK-4e0" secondAttribute="bottom" constant="10" id="BNT-gD-7du"/>
                             <constraint firstItem="j56-gK-4e0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IoV-cZ-18g"/>
                             <constraint firstItem="tc6-KA-AUZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PrP-uK-83Z"/>
-                            <constraint firstItem="a8R-a1-FsD" firstAttribute="top" secondItem="tc6-KA-AUZ" secondAttribute="bottom" constant="8" id="aBv-OU-mkr">
-                                <variation key="heightClass=compact" constant="-57"/>
-                            </constraint>
+                            <constraint firstItem="a8R-a1-FsD" firstAttribute="top" secondItem="tc6-KA-AUZ" secondAttribute="bottom" id="aBv-OU-mkr"/>
                             <constraint firstItem="j56-gK-4e0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cna-34-KxT"/>
                             <constraint firstItem="tc6-KA-AUZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="eTd-Ix-SX2"/>
                             <constraint firstItem="FkS-J3-gjc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-20" id="f7d-8M-VBH"/>
@@ -92,7 +88,7 @@ int main()
                         <viewControllerLayoutGuide type="bottom" id="B0p-kj-TQs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="O3x-1g-LSM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -110,7 +106,7 @@ int main()
                         <viewControllerLayoutGuide type="bottom" id="V5x-ko-NP0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WIY-AO-h5v">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
