@@ -19,11 +19,16 @@
 		C556E48B1E790A2900025862 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C556E4851E790A2800025862 /* ThirdViewController.swift */; };
 		C556E48C1E790A2900025862 /* customCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C556E4861E790A2800025862 /* customCollectionViewCell.swift */; };
 		C556E48F1E790A3500025862 /* road.png in Resources */ = {isa = PBXBuildFile; fileRef = C556E48E1E790A3500025862 /* road.png */; };
+		C58F42E71E7D099300D33E4C /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F42E61E7D099300D33E4C /* Dispatch.swift */; };
 		C5B1FCAF1E7AC22700C637AA /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B1FCAE1E7AC22700C637AA /* MasterViewController.swift */; };
 		C5B60D8B1E7C229000A4B35F /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B60D8A1E7C229000A4B35F /* TopView.swift */; };
 		C5B60D8D1E7C3A7400A4B35F /* slideButtonUp.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B60D8C1E7C3A7400A4B35F /* slideButtonUp.png */; };
 		C5B60D911E7C426B00A4B35F /* slideButtonDown.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B60D901E7C426B00A4B35F /* slideButtonDown.png */; };
 		C5B60D931E7C4D9300A4B35F /* textViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B60D921E7C4D9300A4B35F /* textViewController.swift */; };
+		C5B60D951E7C54A300A4B35F /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B60D941E7C54A300A4B35F /* CustomBackButton.swift */; };
+		C5B60D971E7CC70800A4B35F /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B60D961E7CC70800A4B35F /* ForthViewController.swift */; };
+		C5B60D9E1E7CC98400A4B35F /* IMG_5340.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B60D9C1E7CC98400A4B35F /* IMG_5340.png */; };
+		C5B60D9F1E7CC98400A4B35F /* IMG_4191.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B60D9D1E7CC98400A4B35F /* IMG_4191.png */; };
 		C5B7C24B1E7AA4DC00824B19 /* CustomSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7C24A1E7AA4DC00824B19 /* CustomSlideView.swift */; };
 		C5F0F67E1E7914F700D8A09B /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0F67D1E7914F700D8A09B /* CGPoint+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -43,11 +48,16 @@
 		C556E4851E790A2800025862 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		C556E4861E790A2800025862 /* customCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customCollectionViewCell.swift; sourceTree = "<group>"; };
 		C556E48E1E790A3500025862 /* road.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = road.png; sourceTree = "<group>"; };
+		C58F42E61E7D099300D33E4C /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		C5B1FCAE1E7AC22700C637AA /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		C5B60D8A1E7C229000A4B35F /* TopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		C5B60D8C1E7C3A7400A4B35F /* slideButtonUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slideButtonUp.png; path = Assets.xcassets/SlideButton.imageset/slideButtonUp.png; sourceTree = "<group>"; };
 		C5B60D901E7C426B00A4B35F /* slideButtonDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slideButtonDown.png; sourceTree = "<group>"; };
 		C5B60D921E7C4D9300A4B35F /* textViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textViewController.swift; sourceTree = "<group>"; };
+		C5B60D941E7C54A300A4B35F /* CustomBackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		C5B60D961E7CC70800A4B35F /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
+		C5B60D9C1E7CC98400A4B35F /* IMG_5340.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_5340.png; sourceTree = "<group>"; };
+		C5B60D9D1E7CC98400A4B35F /* IMG_4191.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4191.png; sourceTree = "<group>"; };
 		C5B7C24A1E7AA4DC00824B19 /* CustomSlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSlideView.swift; sourceTree = "<group>"; };
 		C5F0F67D1E7914F700D8A09B /* CGPoint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +113,7 @@
 				C556E4821E790A2800025862 /* PageViewController.swift */,
 				C556E4831E790A2800025862 /* FirstViewController.swift */,
 				C556E4841E790A2800025862 /* SecondViewController.swift */,
+				C58F42E61E7D099300D33E4C /* Dispatch.swift */,
 				C556E4851E790A2800025862 /* ThirdViewController.swift */,
 				C556E4861E790A2800025862 /* customCollectionViewCell.swift */,
 				C5F0F67D1E7914F700D8A09B /* CGPoint+Extension.swift */,
@@ -110,6 +121,10 @@
 				C5B1FCAE1E7AC22700C637AA /* MasterViewController.swift */,
 				C5B60D8A1E7C229000A4B35F /* TopView.swift */,
 				C5B60D921E7C4D9300A4B35F /* textViewController.swift */,
+				C5B60D941E7C54A300A4B35F /* CustomBackButton.swift */,
+				C5B60D961E7CC70800A4B35F /* ForthViewController.swift */,
+				C5B60D9C1E7CC98400A4B35F /* IMG_5340.png */,
+				C5B60D9D1E7CC98400A4B35F /* IMG_4191.png */,
 			);
 			path = "AboutMe-3";
 			sourceTree = "<group>";
@@ -182,11 +197,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5B60D9F1E7CC98400A4B35F /* IMG_4191.png in Resources */,
 				C556E47B1E7909E100025862 /* LaunchScreen.storyboard in Resources */,
 				C5B60D8D1E7C3A7400A4B35F /* slideButtonUp.png in Resources */,
 				C556E48F1E790A3500025862 /* road.png in Resources */,
 				C556E4781E7909E100025862 /* Assets.xcassets in Resources */,
 				C556E4761E7909E100025862 /* Main.storyboard in Resources */,
+				C5B60D9E1E7CC98400A4B35F /* IMG_5340.png in Resources */,
 				C5B60D911E7C426B00A4B35F /* slideButtonDown.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,8 +224,11 @@
 				C556E4711E7909E100025862 /* AppDelegate.swift in Sources */,
 				C5B7C24B1E7AA4DC00824B19 /* CustomSlideView.swift in Sources */,
 				C556E48C1E790A2900025862 /* customCollectionViewCell.swift in Sources */,
+				C58F42E71E7D099300D33E4C /* Dispatch.swift in Sources */,
+				C5B60D971E7CC70800A4B35F /* ForthViewController.swift in Sources */,
 				C556E48A1E790A2900025862 /* SecondViewController.swift in Sources */,
 				C556E48B1E790A2900025862 /* ThirdViewController.swift in Sources */,
+				C5B60D951E7C54A300A4B35F /* CustomBackButton.swift in Sources */,
 				C556E4891E790A2900025862 /* FirstViewController.swift in Sources */,
 				C5F0F67E1E7914F700D8A09B /* CGPoint+Extension.swift in Sources */,
 			);

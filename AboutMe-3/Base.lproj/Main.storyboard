@@ -68,12 +68,23 @@
                     <view key="view" contentMode="scaleToFill" id="O3x-1g-LSM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_4191.png" translatesAutoresizingMaskIntoConstraints="NO" id="xNy-L9-q7g">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="309"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKR-nF-6r0">
+                                <rect key="frame" x="139" y="402" width="136" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="IMG_4191.png"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ymj-i5-IDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1200" y="116"/>
+            <point key="canvasLocation" x="1198.5507246376812" y="115.7608695652174"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="boK-hm-A0K">
@@ -94,4 +105,7 @@
             <point key="canvasLocation" x="-364" y="-375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_4191.png" width="1200" height="900"/>
+    </resources>
 </document>

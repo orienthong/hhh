@@ -66,7 +66,7 @@ class PageViewController: UIPageViewController {
     }
     
     private(set) lazy var orderedViewControllers: [UIViewController] = {
-        return [FirstViewController(), SecondViewController(), ThirdViewController()]
+        return [FirstViewController(), SecondViewController(), ThirdViewController(), ForthViewController()]
     }()
     
 }
@@ -80,6 +80,8 @@ extension PageViewController: UIPageViewControllerDelegate {
             secondViewController.startAnimation()
         } else if let thirdViewController = pendingViewControllers.first as? ThirdViewController {
             thirdViewController.startAnimation()
+        } else if let forthViewController = pendingViewControllers.first as? ForthViewController {
+            forthViewController.startAnimation()
         }
         pending = orderedViewControllers.index(of: pendingViewControllers.first!)!
     }
